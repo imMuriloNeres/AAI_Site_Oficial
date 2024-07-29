@@ -2,7 +2,7 @@
     /** Colors */
     /* Basic */
     --white: rgba(255, 255, 255, 1);
-    --black: rgba(15, 15, 15, 1);
+    --black: rgb(0, 0, 0, 1);
 
    /* Orange */
    --orange-50: rgba(255, 250, 235, 1);
@@ -20,5 +20,5 @@
    --bg-footer: rgba(31, 27, 24, 1);
 
    /** Metrics */
-   --margin-1: 0 1.50rem;
+   --margin-1: 4.5rem;
 }
