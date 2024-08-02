@@ -24,5 +24,6 @@
    /** Metrics */
    --margin-1: 4.5rem;
 
-   --shadow1: -6px 6px 0px rgba(0, 0, 0, 0.8);
+   --hover-shadow: -6px 6px 0px rgba(0, 0, 0, 0.8);
+   --hover-translate: translate(6px, -6px);
 }
