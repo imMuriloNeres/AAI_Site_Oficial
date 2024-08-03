@@ -1,0 +1,24 @@
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner img {
+        height: 50vh;
+    }
+}
