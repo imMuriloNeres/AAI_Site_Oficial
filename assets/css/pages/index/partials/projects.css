@@ -120,23 +120,6 @@
     opacity: 1;
 }
 
-.more-info-btn button {
-    border: none;
-    display: inline-block;
-    padding: 12px 56px;
-    background-color: var(--orange-500);
-    color: var(--black);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.more-info-btn button:hover {
-    transform: var(--hover-translate);
-    box-shadow: var(--hover-shadow);
-}
-
 @media (max-width: 1024px) {
     .card-container {
         gap: 1.5rem;

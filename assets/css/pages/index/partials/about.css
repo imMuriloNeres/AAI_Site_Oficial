@@ -41,20 +41,6 @@
     margin-top: 20px;
 }
 
-.more-info-btn a{
-    display: inline-block;
-    padding: 12px 56px;
-    background-color: var(--orange-500);
-    color: var(--black);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.more-info-btn a:hover {
-    transform: var(--hover-translate);
-    box-shadow: var(--hover-shadow);
-}
 
 .about-image {
     flex: 1;

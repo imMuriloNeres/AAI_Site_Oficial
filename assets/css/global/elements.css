@@ -1,0 +1,31 @@
+/** Botão Primário */
+.primary-btn a, 
+.primary-btn button,
+.secondary-btn a {
+    display: inline-block;
+    padding: 12px 56px;
+
+    background-color: var(--orange-500);
+    color: var(--black);
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+/** Botão Secundário */
+.secondary-btn a {
+    background-color: var(--orange-500);
+}
+
+/** Hover */
+.primary-btn a:hover, 
+secondary-btn:hover, 
+.primary-btn button:hover {
+    transform: var(--hover-translate);
+    box-shadow: var(--hover-shadow);
+}
+
