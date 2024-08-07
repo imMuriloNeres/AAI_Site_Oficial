@@ -75,6 +75,10 @@ header nav ul li a:hover {
     background-color: var(--orange-100);
 }
 
+.responsive-btn {
+    user-select: none;
+}
+
 button.toggle-menu {
     display: flex;
     justify-content: center;
