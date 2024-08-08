@@ -32,3 +32,12 @@ li a {
 li .active {
     background-color: var(--orange-100);
 }
+
+span.highlight {
+    background-color: var(--orange-200);
+    padding: 1.2px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.recuo {text-indent: 4em;}
