@@ -25,6 +25,15 @@ header .header-logo a {
     justify-content: center;
 }
 
+.header-logo img:nth-child(1) {
+    transition: all ease 0.3s;
+}
+
+.header-logo.shrink img:nth-child(1) {
+    width: 90px;
+}
+
+
 header a {
     color: var(--black);
     text-decoration: none;
@@ -133,11 +142,6 @@ button.toggle-menu i {
     right: 0;
     z-index: 888;
     display: none;
-}
-
-
-@media screen and (max-width: 1020px) {
-    
 }
 
 @media screen and (min-width: 836px) {
