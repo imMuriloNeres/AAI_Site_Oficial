@@ -1,0 +1,18 @@
+.about-us-text h2 {
+    color: var(--titles);
+    margin-bottom: 16px;
+}
+
+.about-us-text p {
+    color: var(--parags);
+    line-height: 1.6;
+}
+
+.about-us-text h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 3px;
+    background-color: var(--orange-500);
+}
