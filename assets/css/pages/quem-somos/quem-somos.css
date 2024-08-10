@@ -3,12 +3,26 @@
 @import 'partials/about-cards.css';
 @import 'partials/about-video.css';
 
-.main-content {
+.about-us-text, .about-video {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    margin-bottom: 56px;
+    padding: 0 20px;
 }
 
-.about-us-text, .about-columns, .about-video {
+.about-columns {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-video {
+    margin: 0 auto;
     margin-bottom: 56px;
+}
+
+@media (max-width: 768px) {
+    .about-us-text, .about-columns, .about-video {
+        padding: 0 16px;
+    }
 }
