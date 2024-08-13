@@ -90,7 +90,8 @@
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <h2>Doe por PIX</h2>
-                    <p>Faça sua doação via PIX usando a chave: <strong>chave@pix.com</strong></p>
+                    <p>Faça sua doação via PIX usando a chave: <strong><a href="#" id="copyText">29.760.257/0001-23</a></strong></p>
+                    <div id="notification" class="notification"></div>
                     <a href="https://www.exemplo.com/pix" class="cta-button">Doe Agora</a>
                 </div>
     
@@ -164,5 +165,29 @@
 
     <!-- MENU SHRINK JS -->
     <script src="assets/js/global/menuShrink.js"></script>
+
+    <!-- COPY TO CLIPBOARD SCRIPT -->
+    <script>
+        function mensagemRetorno(mensagem) {
+        var notification = document.getElementById('notification');
+
+        notification.innerText = mensagem;
+        notification.style.display = 'block';
+        
+        setTimeout(function() {
+            notification.style.display = 'none';
+        }, 5000);
+    };
+        
+        document.getElementById('copyText').addEventListener('click', function() {
+        const textoParaCopiar = "29760257000123";
+
+        navigator.clipboard.writeText(textoParaCopiar).then(() => {
+            mensagemRetorno("Texto copiado com sucesso!");
+        }).catch(err => {
+            mensagemRetorno("Falha ao copiar o texto. Por favor, copie manualmente.");
+        });
+    });
+    </script>
 </body>
 </html>
