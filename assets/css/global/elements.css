@@ -1,4 +1,4 @@
-/** Botão Primário */
+/* Botão Primário */
 .primary-btn a, 
 .primary-btn button,
 .secondary-btn a {
@@ -16,12 +16,12 @@
     transition: all 0.3s ease;
 }
 
-/** Botão Secundário */
+/* Botão Secundário */
 .secondary-btn a {
     background-color: var(--orange-500);
 }
 
-/** Hover */
+/* Hover */
 .primary-btn a:hover, 
 secondary-btn:hover, 
 .primary-btn button:hover {
@@ -29,3 +29,53 @@ secondary-btn:hover,
     box-shadow: var(--hover-shadow);
 }
 
+/* BANNER SOLID */
+.banner-solid {
+    width: 100%;
+    height: 36vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.banner-solid img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover   ;
+    z-index: -1;
+}
+
+.banner-solid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 204, 50, 0.9 );
+    z-index: 0;
+}
+
+.banner-solid h1 {
+    position: relative;
+    color: var(--white);
+    z-index: 1;
+}
+
+.banner-solid h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: var(--white);
+}

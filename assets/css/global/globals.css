@@ -29,6 +29,4 @@ li a {
     display: block;
 }
 
-li .active {
-    background-color: var(--orange-100);
-}
+.recuo {text-indent: 4em;}
