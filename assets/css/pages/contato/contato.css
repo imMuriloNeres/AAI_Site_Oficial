@@ -18,7 +18,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.contact-info p {
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contact-info li, .contact-info li > a {
     font-size: 1.2rem;
     margin: 10px 0;
 }
